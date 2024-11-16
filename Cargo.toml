@@ -3,5 +3,9 @@ name = "learn_rust"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "myapp"
+path = "src/demo.rs"
+
 [dependencies]
 rand = "0.8.5"
