@@ -4,7 +4,6 @@ fn main() {
     println!("MAX_LINE是：{}  ", MAX_LINE);
 
     //  整数类型
-    let guess: u32 = "42".parse().expect("Not a number!");
     let _guess: i32 = "42".parse().expect("Not a number!");
     println!("_guess 是   {} ", _guess);
 
@@ -46,7 +45,7 @@ fn main() {
 
 fn fn_bool() {
     let t = true;
-    let f: bool = false;
+    let _f: bool = false;
     println!("t is {}", t);
 }
 
@@ -59,28 +58,28 @@ fn fn_char() {
 
 fn fn_numeric_perations() {
     // addition
-    let sum = 5 + 10;
+    let _sum = 5 + 10;
 
     // subtraction
-    let difference = 95.5 - 4.3;
+    let _difference = 95.5 - 4.3;
 
     // multiplication
-    let product = 4 * 30;
+    let _product = 4 * 30;
 
     // division
-    let quotient = 56.7 / 32.2;
-    let truncated = -5 / 3; // Results in -1
-    println!("truncated is  {} ", truncated);
+    let _quotient = 56.7 / 32.2;
+    let _truncated = -5 / 3; // Results in -1
+    println!("truncated is  {} ", _truncated);
 
     // remainder
-    let remainder = 43 % 5;
-    println!("remainder is  {} ", remainder);
+    let _remainder = 43 % 5;
+    println!("remainder is  {} ", _remainder);
 }
 
 fn fn_tuple() {
     let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
-    println!("The value of y is: {}", y);
+    let (_x, _y, _z) = tup;
+    println!("The value of y is: {}", _y);
 
     let x: (i32, f64, u8) = (500, 6.4, 1);
     // 点标记法  a period (.) followed by the index of the value we want to access
@@ -142,9 +141,8 @@ fn fn_for_1() {
     }
 }
 fn fn_for_2() {
-    for number in (1..4).rev(){
+    for number in (1..4).rev() {
         println!("{number}!!!")
     }
     println!("fn_for_2")
-    
 }
